@@ -12,4 +12,4 @@ Høst sko med blader
 Bildet er tatt av <a href="https://pixabay.com/no/users/pexels-2286921/">Pexels</a> fra <a href="https://pixabay.com/no/photos/høst-støvler-tørre-blader-falle-1869461/">Pixabay</a>
 
 Et par nike sko, brukt som placeholder bilde
-Bildet er tatt av <a href="https://pixabay.com/no/users/deanmoth-20152640/">Pexels</a> fra <a href="https://pixabay.com/no/vectors/tennis-sko-fottøy-mote-nike-7968714/">Pixabay</a>
+Bildet er tatt av <a href="https://pixabay.com/no/users/deanmoth-20152640/">DeanMoth</a> fra <a href="https://pixabay.com/no/vectors/tennis-sko-fottøy-mote-nike-7968714/">Pixabay</a>
