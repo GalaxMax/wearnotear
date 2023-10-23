@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font-icons/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font-icons/css/brands.css" rel="stylesheet">
+    <link href="css/font-icons/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>WearNoTear</title>
 </head>
 <body>
@@ -12,45 +16,82 @@
             <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo for WearNoTear"></a>
             <nav>
                 <ul>
-                    <li><img src="img/search.png" alt="Søkefelt"></li>
-                    <li><img src="img/cart.png" alt="Handlekurv knapp"></li>
-                    <li><img src="img/profil.png" alt="Profil knapp"></li>
-                    <li><img src="img/dropdown.png" alt="Dropdown knapp"></li>
+                    <li>
+                        <form>
+                            <input type="text" placeholder="Søk.." name="search">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-bars"></i></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="sesong">
                 <h2>Sesongens skotrender</h2>
-                <article>
-                    <img src="img/sko1.jpg" alt="Sko 1">
-                    <h3>Ny Nike sko</h3>
-                    <p>Skotrend 1 er en sko som er veldig fin.</p>
-                </article>
-                <article>
-                    <img src="img/alone-1869914_1280.jpg" alt="">
-                    <h3>Høsten kommer</h3>
-                    <p>Skotrend 1 er en sko som er veldig fin.</p>
-                </article>
+                <div>
+                    <article>
+                        <img src="img/sko1.jpg" alt="nike salg">
+                        <h3>Nike salg</h3>
+                        <p>Sjekk vårt utvalg av favorittsko fra Nike. Nå til lavere pris enn før!</p>
+                        <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                    </article>
+                    <article>
+                        <img src="img/host.jpg" alt="høst sko">
+                        <h3>Høsten er i gang!</h3>
+                        <p>Har du bra sko til været?</p>
+                        <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                    </article>
+                    <article>
+                        <img src="img/blomst.jpg" alt="joggesko">
+                        <h3>Reise i høstferien?</h3>
+                        <p>Se vårt tilbud på joggesko.</p>
+                        <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                    </article>
+                </div>
             </section>
-
             <section id="trendogsalg">
-                <h2>Salg og trendy produkter</h2>
-                <article>
-                    <img src="" alt="">
-                    <h3>Skotrend 1</h3>
-                    <p>Skotrend 1 er en sko som er veldig fin.</p>
+                <h2>Nyheter!</h2>
+                <article class="produktListe">
+                    <img class="produktBilde" src="img/produktEksempel.png" alt="bilde av produkt">
+                    <h3 class="produktOverskrift">Salg på Elite Sko</h3>
+                    <p class="produktTekst">Nå er det 20% av hele Elite serien fra Nike!</p>
+                    <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                </article>
+                <article class="produktListe">
+                    <img class="produktBilde" src="img/produktEksempel.png" alt="bilde av produkt">
+                    <h3 class="produktOverskrift">Nye varer på lager!</h3>
+                    <p class="produktTekst">Her kan det være diverse informasjon.</p>
+                    <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                </article>
+                <article class="produktListe">
+                    <img class="produktBilde" src="img/produktEksempel.png" alt="bilde av produkt">
+                    <h3 class="produktOverskrift">Eksempel artikkel</h3>
+                    <p class="produktTekst">Her kan det være diverse informasjon.</p>
+                    <a class="lesmerKnapp" href="produkt.html">Les mer</a>
+                </article>
+                <article class="produktListe">
+                    <img class="produktBilde" src="img/produktEksempel.png" alt="bilde av produkt">
+                    <h3 class="produktOverskrift">Eksempel artikkel</h3>
+                    <p class="produktTekst">Her kan det være diverse informasjon.</p>
+                    <a class="lesmerKnapp" href="produkt.html">Les mer</a>
                 </article>
             </section>
         </main>
         <footer>
-            <h2>WearNoTear</h2>
-            <h3>Kundeservice</h3>
+            <section>
+                <h3>Kundeservice</h3>
+                <p>Kontakt oss</p>
+                <p>Returner vare</p>
+                <p>Din konto</p>
+            </section>
             <section>
                 <h3>Informasjon</h3>
-                <p>Org.nr: 123456789</p>
-                <p>Telefon: 12345678</p>
-                <p>E-post:</p>
+                <p><a href="om-oss.html">Om oss</a></p>
+                <p>FAQ</p>
+                <p>Sosiale medier</p>
             </section>
         </footer>
     </div>

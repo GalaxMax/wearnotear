@@ -1,17 +1,21 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     font-size: calc(1em + 1vw);
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    max-width: 100%;
     background-color: #efefef;
 }
+
 #gridContainer {
     display: grid;
-    gap: 20px;
+    gap: 1rem;
     grid-template-areas:
       "header"
       "main"
@@ -19,6 +23,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
+
 header {
     position: relative;
     display: flex;
@@ -31,54 +36,222 @@ header {
     background-color: #fffc94;
     border-bottom: 1px solid #e5e5e5;
 }
-#logo {
-    position: relative;
-    top: 50%;
-    left: 1rem;
-    width: auto;
-    height: 75px;
-}
+
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     width: 100%;
 }
+
 nav ul {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     width: 100%;
-    padding: 0.5rem;
+    padding-right: 1rem;
+    gap: 0.5rem;
+    font-size: 1.8rem;
 }
-nav img {
-    width: 1.5rem;
-    height: auto;
+
+nav form {
+    display: flex;
 }
+
+nav input {
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    height: 2.1rem;
+}
+
+nav button {
+    background: #d9d9d9;
+    height: 2.1rem;
+    width: 2.1rem;
+    cursor: pointer;
+}
+
 main {
     grid-area: main;
-    background-color: aqua;
-}
-#sesong {
-    position: relative;
-    display: flex;
-    align-items:center;
-    padding: 1rem;
-    overflow-x: scroll;
-}
-#sesong:not(h2) {
     text-align: center;
 }
 
 
+
+#logo {
+    position: relative;
+    top: 50%;
+    left: 0.5rem;
+    width: auto;
+    height: 4rem;
+}
+
+#sesong div{
+    display: flex;
+    margin: auto;
+    background-color: aquamarine;
+    border: 2px solid black;
+    width: 18rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#sesong article {
+    background-color: white;
+}
+
+#sesong p {
+    width: 15rem;
+    padding: 0.5rem;
+    white-space: normal;
+}
+
 #sesong img {
-    max-width:100%;
     width: 100%;
 }
 
+#trendogsalg {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    top: 1rem;
+    border-top: 2px solid black;
+}
+
+.produktBilde {
+    grid-area: bilde;
+    align-self: center;
+    width: 5rem;
+    height: auto;
+}
+
+.produktOverskrift {
+    grid-area: overskrift;
+    border-bottom: black solid 2px;
+    font-size: 1rem;
+    align-self: center;
+    width: 80%;
+    margin: auto;
+}
+
+.produktTekst {
+    grid-area: tekst;
+    font-size: 0.8rem;
+    align-self: center;
+    text-align: left;
+}
+
+.produktPris {
+    grid-area: tekst;
+    font-size: 1rem;
+    align-self: center;
+    text-align: right;
+}
+
+.lesmerKnapp {
+    grid-area: knapp;
+    align-self: center;
+    justify-self: center;
+    height: 1.5rem;
+    width: 90%;
+    padding: 0.2rem;
+    background-color: #fffc94;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 7px;
+    display: inline-block;
+    font-size: 0.8rem;
+    overflow: hidden;
+}
+
+.produktListe {
+    display: grid;
+    grid-template-areas: 
+    "bilde overskrift overskrift overskrift"
+    "bilde tekst tekst knapp";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #f6f6f6;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+.filterKnapp {
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 4rem;
+    margin: 3px;
+}
+
+#filter {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#produkter {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+#omoss {
+    position: relative;
+    text-align: left;
+    margin: auto;
+    width: 80%;
+}
+#omoss h2 {
+    text-align: center;
+}
+
 footer {
+    display: flex;
     grid-area: footer;
     background-color: #292928;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    top: 1rem;
+    gap: 1rem;
     border-top: 1px solid #000000;
+    text-decoration: none;
+    justify-content: left;
+}
+
+footer section{
+    border-left: 3px solid white;
+    padding: 0.5rem;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    #sesong div{
+        width: 1000px;
+    }
+    #sesong p {
+        width: 12rem;
+    }
+    #desktopView {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .produktListe {
+        flex-basis: 30%
+    }
+    .produktBilde {
+        width: 3rem;
+    }
+    .produktPris {
+        font-size: 0.8rem;
+    }
 }
