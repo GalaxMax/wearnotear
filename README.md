@@ -1,5 +1,9 @@
 # wearnotear
 
+VIKTIG INFORMASJON!
+Jeg har misforstått oppgaven når det kommer til produkt nettsiden. Jeg trodde det var spurt om en nettside for forskjellige produkter, ikke en nettside for ett produkt. Derfor har jeg laget siden "vare.html" i all hast mens ekstra sjansen er åpen. Dette var en misforståelse og jeg forstår at dette vil bruke opp min ekstra sjanse, men dette er forklaringen på hvorfor det er 4 .html dokumenter i stedet for 3.
+Nå som jeg har startet på oblig 4 så forstår jeg hvorfor det er nødvendig med en produkt side, og er grunnen til at jeg fant ut av denne feilen. Jeg beklager for misforståelsen og håper det er greit at jeg har laget en ekstra side for å vise at jeg har forstått oppgaven.
+
 Kilder til bilder 
 
 Nike sko på asfalt
